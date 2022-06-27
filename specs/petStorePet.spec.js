@@ -25,7 +25,7 @@ test('Find pet by ID - I can successfully find a pet by ID', async () => {
       expect(r.body.name).toEqual(body.name);
 });
 //This test should return 400 instead of 404, as {ID:INTEGER}, putting a string instead of an int should return 400.
-test('Find pet by ID - I can find a pet by invalid ID', async () => {
+test('Find pet by ID - I can not find a pet by invalid ID', async () => {
   const invalid_id = 'String'
   const body = new BuildPet().addCatName().addPhotoUrls().addId().addCategory().addTag().addStatus()
     .generate();
