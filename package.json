@@ -1,0 +1,46 @@
+{
+    "name": "jscourse",
+    "version": "0.0.1",
+    "description": "© Здесь могла бы быть ваша реклама)",
+    "scripts": {
+        "test": "jest --config jest.local.js --testTimeout=50000"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint . --fix"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Injeevskaya/CourseWork"
+    },
+    "author": "tinjeevskaya",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Injeevskaya/CourseWork"
+    },
+    "homepage": "https://github.com/Injeevskaya/CourseWork#readme",
+    "dependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "babel-eslint": "^10.1.0",
+        "babel-jest": "^27.5.1",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jest": "^24.7.0",
+        "faker": "^5.5.3",
+        "husky": "^7.0.4",
+        "jest": "^28.1.1",
+        "jest-cli": "^27.5.1",
+        "lint-staged": "^11.2.6",
+        "node-fetch": "^2.6.7"
+    },
+    "devDependencies": {
+        "supertest": "^6.2.3"
+    }
+}
