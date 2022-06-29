@@ -31,4 +31,4 @@ jobs:
         name: testsReport
         path: |
           report.html
-          jest-html-reporters-attach/report        
+          jest-html-reporters-attach/report
