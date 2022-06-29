@@ -70,7 +70,7 @@ test('Delete a pet - I can successfully delete pet by id', async () => {
       await api().Pet().getAnimalById(body.id);
     const r = await api().Pet().deleteAnimalById(body.id);
       expect(r.status).toEqual(200);
-    //Getting Id of deleting animal should return 404 there is one more test to check it
+    //Getting Id of deleted animal should return 404 there is one more test to check it
     const r_get = await api().Pet().getAnimalById(body.id); 
       expect(r_get.status).toEqual(404);
 });
